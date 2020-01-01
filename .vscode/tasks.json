@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "windows": {
+                "command": "${workspaceRoot}\\.vscode\\compile.bat"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "external",
+                "fileLocation": [
+                    "absolute"
+                ],
+                "pattern": {
+                    "regexp": "(([A-Za-z]):\\\\(?:[^\\/:*?\"<>|\\r\\n]+\\\\)*[^\\/\\s\\(:*?\"<>|\\r\\n]*)\\((\\d+),(\\d+)\\)\\s.*(Fatal|Error|Warning|Hint|Note):\\s\\((\\d+)\\)\\s(.*)$",
+                    "file": 1,
+                    "line": 4,
+                    "severity": 5,
+                    "code": 6,
+                    "message": 7
+                }
+            }
+        }
+    ]
+}

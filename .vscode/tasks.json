@@ -19,9 +19,7 @@
             },
             "problemMatcher": {
                 "owner": "external",
-                "fileLocation": [
-                    "absolute"
-                ],
+                "fileLocation": ["relative", "${workspaceRoot}"],
                 "pattern": {
                     "regexp": "(([A-Za-z]):\\\\(?:[^\\/:*?\"<>|\\r\\n]+\\\\)*[^\\/\\s\\(:*?\"<>|\\r\\n]*)\\((\\d+),(\\d+)\\)\\s.*(Fatal|Error|Warning|Hint|Note):\\s\\((\\d+)\\)\\s(.*)$",
                     "file": 1,
